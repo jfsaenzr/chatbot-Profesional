@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <title>ChatGPT Local</title>
+
+</head>
+
+<body>
+
+  <div class="">
+    <svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 1366 35" style="enable-background:new 0 0 1366 35;" xml:space="preserve">
+      <switch>
+        <g i:extraneous="self">
+          <image href="Logo_Kbit.png" height="30" width="200" transform="matrix(1 0 0 1 -20 0)"/>
+          <g id="contenido">
+            <text transform="matrix(1 0 0 1 180.6463 24.3193)" class="" fill="#0068ad" font-weight="" font-size="20">
+              Profesional</text>
+            <line class="" x1="16.3" y1="33.3" x2="1349.7" y2="33.3" style="stroke:#0068ad; stroke-width:1.5" />
+          </g>
+        </g>
+      </switch>
+    </svg>
+  </div>
+  <br>
+  <main>
+    <ul>
+      <li class="loading">
+        <i></i>
+        <h4>Cargando...</h4>
+        <h5>Esto puede tardar un poco. Paciencia.</h5>
+      </li>
+    </ul>
+  </main>
+
+  <form>
+    <input placeholder="Escribe tu mensaje aquí...">
+    <button disabled>Enviar</button>
+  </form>
+  <br>
+  <small>&nbsp;</small>
+
+  <template id="message-template">
+    <li class="message">
+      <span></span>
+      <p></p>
+    </li>
+  </template>
+</body>
+<script type="module" src='./code.js' type='text/javascript'></script>
+
+</html>

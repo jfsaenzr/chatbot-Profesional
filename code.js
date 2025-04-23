@@ -38,8 +38,8 @@ const engine = await CreateWebWorkerMLCEngine(
                 end = true
                 $loading?.parentNode?.removeChild($loading)
                 $button.removeAttribute('disabled')
-                addMessage("Buenos días Dr. Galindo. Espero que su jornada este transcurriendo sin inconvenientes. Le informo que su próximo paciente, Pepito Andrés Pérez, de 41 años, está listo para la consulta.", 'bot')
-                addMessage("Motivo de consulta: Fuerte dolor de cabeza en los últimos 20 días. Además, se reportan antecedentes relevantes de hipoglicemia, sus padres sufren de hipertensión y su abuela materna murió de diabetes, manifiesta tener episodios frecuentes de estrés, paciente con poca actividad física, fuma y es alérgico a los AINE.Para un paciente con estas características, es importante abordar tanto los síntomas actuales cómo los factores de riesgo a largo plazo, Aquí tienes un plan de manejo sugerido:1.	Realizar una evaluación médica completa: Realizar estudios para determinar la causa de los dolores de cabeza. Monitorear niveles de glucosa en sangre debido a sus antecedentes y Evaluar presión arterial regularmente, considerando el historial familiar.2.	Modificaciones en su estilo de vida: Actividad física, dieta saludable, dejar de fumar, hidratación y rutinas adecuadas de sueño.3.	Manejo de los dolores de cabeza: Dado que es alérgico a los AINE, considerar alternativas cómo terapias no farmacológicas como compresas frías o técnicas de relajación, identificar y evitar desencadenantes de estrés.Cómo asistente, mi objetivo es ofrecer información y sugerencias que puedan complementar el criterio clínico y profesional del médico tratante. Reconozco que cada paciente es único y que las decisiones finales sobre su manejo deben ser tomadas por el profesional. Estoy aquí como apoyo y herramienta para enriquecer el proceso de atención médica. ¡Gracias por confiar en mí para colaborar en esta misión tan importante!", 'bot')
+                addMessage("Buenos días Dr. Galindo. Espero que su jornada este transcurriendo sin inconvenientes. Le informo que su próximo paciente, Johan Saenz Ramos, de 39 años, está listo para la consulta.", 'bot')
+                addMessage("Motivo de consulta: Fuerte dolor de cabeza en los últimos 20 días. Además, se reportan antecedentes relevantes de hipoglicemia, sus padres sufren de hipertensión y su abuela materna murió de diabetes, manifiesta tener episodios frecuentes de estrés, paciente con poca actividad física, fuma, toma alcohol y es alérgico a los AINE.Para un paciente con estas características, es importante abordar tanto los síntomas actuales cómo los factores de riesgo a largo plazo, Aquí tienes un plan de manejo sugerido:1.	Realizar una evaluación médica completa: Realizar estudios para determinar la causa de los dolores de cabeza. Monitorear niveles de glucosa en sangre debido a sus antecedentes y Evaluar presión arterial regularmente, considerando el historial familiar.2.	Modificaciones en su estilo de vida: Actividad física, dieta saludable, dejar de fumar, hidratación y rutinas adecuadas de sueño.3.	Manejo de los dolores de cabeza: Dado que es alérgico a los AINE, considerar alternativas cómo terapias no farmacológicas como compresas frías o técnicas de relajación, identificar y evitar desencadenantes de estrés.Cómo asistente, mi objetivo es ofrecer información y sugerencias que puedan complementar el criterio clínico y profesional del médico tratante. Reconozco que cada paciente es único y que las decisiones finales sobre su manejo deben ser tomadas por el profesional. Estoy aquí como apoyo y herramienta para enriquecer el proceso de atención médica. ¡Gracias por confiar en mí para colaborar en esta misión tan importante!", 'bot')
                 $input.focus()
             }
         }
@@ -96,8 +96,6 @@ $form.addEventListener('submit', async (event) => {
 
 })
 
-
-
 function addMessage(text, sender) {
     // clonar el template
     const clonedTemplate = $template.content.cloneNode(true)
@@ -107,7 +105,7 @@ function addMessage(text, sender) {
     const $text = $newMessage.querySelector('p')
 
     $text.textContent = text
-    $who.textContent = sender === 'bot' ? 'HeonCare' : 'Tú'
+    $who.textContent = sender === 'bot' ? 'Asistente' : 'Tú'
     $newMessage.classList.add(sender)
 
     $messages.appendChild($newMessage)

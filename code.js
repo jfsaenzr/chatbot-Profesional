@@ -105,7 +105,7 @@ function addMessage(text, sender) {
     const $text = $newMessage.querySelector('p')
 
     $text.textContent = text
-    $who.textContent = sender === 'bot' ? 'Asistente' : 'Tú'
+    $who.textContent = sender === 'bot' ? 'HeonCare' : 'Tú'
     $newMessage.classList.add(sender)
 
     $messages.appendChild($newMessage)
